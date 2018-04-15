@@ -14,6 +14,7 @@ public class Application {
         return "Hello Docker World";
     }
 
+    
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
