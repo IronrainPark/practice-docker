@@ -9,13 +9,6 @@ buildscript {
     }
 }
 
-logger.debug("@@=========================================== ");
-logger.debug("${project.group}");
-logger.debug(jar.baseName);
-logger.debug(jar.archiveName);
-logger.debug(jar.archivePath)
-logger.debug("@@=========================================== ");
-
 group = 'springio'
 
 apply plugin: 'java'
@@ -48,3 +41,10 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
+
+logger.debug("@@=========================================== ");
+logger.debug("${project.group}");
+logger.debug(jar.baseName);
+logger.debug(jar.archiveName);
+logger.debug(jar.archivePath)
+logger.debug("@@=========================================== ");
