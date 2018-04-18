@@ -8,7 +8,13 @@ buildscript {
         classpath('gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.13.0')
     }
 }
- 
+
+logger.debug("@@=========================================== ");
+logger.debug("${project.group}/${jar.baseName}");
+logger.debug("${jar.archiveName}");
+logger.debug('${jar.archivePath}')
+logger.debug("@@=========================================== ");
+
 group = 'springio'
 
 apply plugin: 'java'
